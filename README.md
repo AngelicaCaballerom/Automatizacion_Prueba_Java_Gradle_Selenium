@@ -1,2 +1,2 @@
-# PruebaTecnicaChoucair
+# PruebaTecnica
 Reto Técnico de Automatización
