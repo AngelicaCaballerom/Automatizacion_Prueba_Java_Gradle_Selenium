@@ -24,7 +24,7 @@ public class Utest_StepDefinitions {
 
     @Dado("Angelica ingresa al aplicativo de Utest")
     public void angelicaIngresaAlAplicativoDeUtest() {
-        OnStage.theActor("Angelica").wasAbleTo(AbrirPagina.utest());
+        OnStage.theActor("Angelica").wasAbleTo(AbrirPagina.pagina("https://utest.com"));
     }
 
     @Cuando("inicio en el apartado de join today")
@@ -62,4 +62,6 @@ public class Utest_StepDefinitions {
     public void verificamosQueSeHayaRealizadoElRegistroDelUsuario() {
         OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(VerificarRegistroUsuario.usuario(), Matchers.equalTo("Welcome to the world's largest community of freelance software testers!")));
     }
+
+
 }

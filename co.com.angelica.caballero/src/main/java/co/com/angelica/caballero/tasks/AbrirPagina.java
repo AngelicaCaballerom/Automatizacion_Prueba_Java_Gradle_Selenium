@@ -8,14 +8,18 @@ import net.serenitybdd.screenplay.actions.Open;
 
 
 public class AbrirPagina implements Task {
+    private final String url;
 
-    public static AbrirPagina utest() {
-        return Tasks.instrumented(AbrirPagina.class);
+    public AbrirPagina(String url) {
+        this.url = url;
+    }
+    public static AbrirPagina pagina(String url) {
+        return Tasks.instrumented(AbrirPagina.class,url);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Open.url("https://utest.com"), Browser.maximize()
+        actor.attemptsTo(Open.url(url), Browser.maximize()
         );
 
     }

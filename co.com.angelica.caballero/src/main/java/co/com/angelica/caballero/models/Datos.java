@@ -10,6 +10,7 @@ import java.util.Map;
 
 @Data
 public class Datos {
+
     private String nombre;
     private String apellido;
     private String correo;
@@ -28,6 +29,9 @@ public class Datos {
     private String sistema_operativo;
     private String contrasena;
     private String confirmar_contrasena;
+    private String curso;
+
+
 
     public static List<Datos> setDatos(DataTable dataTable) {
         List<Datos> dates = new ArrayList<>();

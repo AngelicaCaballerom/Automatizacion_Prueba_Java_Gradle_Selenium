@@ -6,8 +6,8 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/utest_registro.feature",
-        tags = "@Utest",
+@CucumberOptions(features = "src/test/resources/features/prueba_queo.feature",
+        tags = "@Queo",
         glue = "co.com.angelica.caballero.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE )
 
